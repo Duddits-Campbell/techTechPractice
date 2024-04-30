@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>TOP</title>
+    <link rel="stylesheet" href="./style/top.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <script src="./js/common.js" defer></script> <!-- defer bodyタグ読み込んでからjsを読み込んでくれる-->
+</head>
+<body>
+    <header>
+            <div class="header">
+                <div class="header__contents">
+                    <img src="./img/30min-logo.png">
+                </div>
+                <div class="header__contents__MyPage">
+                    <a href="#">Reserve System My page</a>
+                </div>
+            </div>
+    </header>
+    <main>
+       <div class="main">
+            <div class="main__status">
+                <p id="title">予約状況</p>
+                <div class="main__status__reservation">
+                    <div class="main__status__reservation__top">
+                        <p>[3/3]2023.07.01 14:00~15:00</p>
+                        <p>★レッスン料支払日</p>
+                    </div>
+                    <div class="main__status__button">
+                        <a href="#"> <!-- 親要素　relative -->
+                            <div id="statusButton"> <!-- 子要素-->
+                                <span>Reservation</span>
+                                <br>予約
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div id="statusButton">
+                                <span>Change</span>
+                                <div>予約変更</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main__message">
+                <p id="title">先生から一言</p>
+                    <div class="main__message__box">
+                        <div class="main__message__box__title">
+                            <span>2023.00.00</span>
+                               <div id="buttonStyle">open<br>
+                                    <img src="./img/arrow_under.svg">
+                                </div>
+                        </div>
+                        <div class="" id="openCloseBtn">
+                            メッセージが入ります。メッセージが入ります。
+                            メッセージが入ります。メッセージが入ります。
+                            メッセージが入ります。メッセージが入ります。
+                            メッセージが入ります。メッセージが入ります。
+                            メッセージが入ります。メッセージが入ります。
+                        </div>
+                    </div>
+                    <a href="#">
+                        <div class="main__message__before">
+                            <span>Message</span>　過去のメッセージ　<img id="buttonImage" src="./img/arrow_right-w.svg"><!-- 三角いれる　-->
+                        </div>
+                    </a>
+            </div>
+            <div class="main__history">
+                <p id="title">レッスン履歴</p>
+                <div class="main__history__lesson">
+                    <div id="lessonHistory">
+                        <p>[3/3]2023.07.01 14:00～15:00</p>
+                            <a href="#">
+                                <div class="main__history__lesson__change">
+                                    変更する
+                                </div>
+                            </a>
+                    </div>
+                    <p>[3/2]2023.06.12 14:00～15:00</p>
+                    <p>[3/1]2023.06.12 14:00～15:00</p>
+                </div>
+                <a href="#">
+                    <div class="main__history__all">
+                        <span>history</span>　履歴一覧<img id="buttonImage" src="./img/arrow_right-w.svg">
+                    </div>
+                </a>
+            </div>
+       </div> 
+    </main>
+    <footer>
+        <div class="footer">
+            <p>2023&copy;minutes</p>
+    </div>
+    </footer>
+</body>
+</html>

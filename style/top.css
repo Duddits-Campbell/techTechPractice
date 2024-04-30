@@ -1,0 +1,590 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0;
+}
+
+/* Document */
+/* ============================================ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Remove gray overlay on links for iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent; /* 3*/
+}
+
+/* Sections */
+/* ============================================ */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/* Vertical rhythm */
+/* ============================================ */
+p,
+table,
+blockquote,
+address,
+pre,
+iframe,
+form,
+figure,
+dl {
+  margin: 0;
+}
+
+/* Headings */
+/* ============================================ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+}
+
+/* Lists (enumeration) */
+/* ============================================ */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Lists (definition) */
+/* ============================================ */
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 0;
+}
+
+/* Grouping content */
+/* ============================================ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+  border-top-width: 1px;
+  margin: 0;
+  clear: both;
+  color: inherit;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+address {
+  font-style: inherit;
+}
+
+/* Text-level semantics */
+/* ============================================ */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  text-decoration: none;
+  color: inherit;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: inherit; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Replaced content */
+/* ============================================ */
+/**
+ * Prevent vertical alignment issues.
+ */
+svg,
+img,
+embed,
+object,
+iframe {
+  vertical-align: bottom;
+}
+
+/* Forms */
+/* ============================================ */
+/**
+ * Reset form fields to make them styleable.
+ * 1. Make form elements stylable across systems iOS especially.
+ * 2. Inherit text-transform from parent.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  -webkit-appearance: none; /* 1 */
+  -moz-appearance: none;
+       appearance: none;
+  vertical-align: middle;
+  color: inherit;
+  font: inherit;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-transform: inherit; /* 2 */
+}
+
+/**
+ * Reset radio and checkbox appearance to preserve their look in iOS.
+ */
+[type=checkbox] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+       appearance: checkbox;
+}
+
+[type=radio] {
+  -webkit-appearance: radio;
+  -moz-appearance: radio;
+       appearance: radio;
+}
+
+/**
+ * Correct cursors for clickable elements.
+ */
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type=button]:disabled,
+[type=reset]:disabled,
+[type=submit]:disabled {
+  cursor: default;
+}
+
+/**
+ * Improve outlines for Firefox and unify style with input elements & buttons.
+ */
+:-moz-focusring {
+  outline: auto;
+}
+
+select:disabled {
+  opacity: inherit;
+}
+
+/**
+ * Remove padding
+ */
+option {
+  padding: 0;
+}
+
+/**
+ * Reset to invisible
+ */
+fieldset {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+
+legend {
+  padding: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the outline style in Safari.
+ */
+[type=search] {
+  outline-offset: -2px; /* 1 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Fix font inheritance.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Clickable labels
+ */
+label[for] {
+  cursor: pointer;
+}
+
+/* Interactive */
+/* ============================================ */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Remove outline for editable content.
+ */
+[contenteditable]:focus {
+  outline: auto;
+}
+
+/* Tables */
+/* ============================================ */
+/**
+1. Correct table border color inheritance in all Chrome and Safari.
+*/
+table {
+  border-color: inherit; /* 1 */
+}
+
+caption {
+  text-align: left;
+}
+
+td,
+th {
+  vertical-align: top;
+  padding: 0;
+}
+
+th {
+  text-align: left;
+  font-weight: bold;
+}
+
+.header {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  background-color: #1A1A1A;
+  justify-content: space-between;
+}
+.header__contents {
+  filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+}
+.header__contents__MyPage a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+#title {
+  color: #fff;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+
+.main {
+  background-color: #1A1A1A;
+}
+.main__status {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+.main__status #title::before {
+  content: "Status";
+  color: #fff;
+  font-size: 50px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+  height: 200px;
+}
+.main__status__reservation {
+  margin-top: 20px;
+}
+.main__status__reservation__top {
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 70px;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.main__status__reservation__top p {
+  color: red;
+  font-size: 16px;
+}
+.main__status__reservation__top p:first-child {
+  font-size: 20px;
+  color: #1A1A1A;
+}
+.main__status__button {
+  gap: 0 30px;
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.main__status__button a {
+  text-decoration: none;
+  color: #1A1A1A;
+}
+.main__status__button #statusButton {
+  background-color: #fff;
+  outline: #1A1A1A solid 1px;
+  outline-offset: -5px;
+  width: 160px;
+  height: 80px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.main__status__button span {
+  font-size: 30px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  height: 20px;
+}
+.main__message {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+.main__message #title::before {
+  content: "Message";
+  color: #fff;
+  font-size: 50px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+.main__message__box {
+  margin-top: 20px;
+  background-color: #fff;
+  text-align: left;
+}
+.main__message__box__title {
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+.main__message__box__title span {
+  font-size: 30px;
+}
+.main__message__box__title #buttonStyle {
+  padding: 10px;
+}
+.main__message a {
+  text-decoration: none;
+}
+.main__message__before {
+  margin-top: 15px;
+  color: #fff;
+  width: 350px;
+  height: 40px;
+  border: 2px solid #fff;
+}
+.main__message__before span {
+  font-size: 30px;
+}
+.main__message__before img {
+  vertical-align: text-bottom;
+}
+.main__history {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+}
+.main__history #title::before {
+  content: "History";
+  color: #fff;
+  font-size: 50px;
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+.main__history__lesson {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 350px;
+  background-color: #fff;
+  text-align: left;
+  line-height: 4ex;
+}
+.main__history__lesson #lessonHistory {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__history__lesson #lessonHistory a {
+  background-color: #1A1A1A;
+  color: #fff;
+  padding: 2px;
+  letter-spacing: 0.2em;
+}
+.main__history__lesson__change {
+  height: 18px;
+  line-height: 18px;
+  font-size: 14px;
+}
+.main__history__lesson p {
+  font-size: 20px;
+}
+.main__history__all {
+  margin-top: 15px;
+  color: #fff;
+  width: 350px;
+  height: 40px;
+  border: 2px solid #fff;
+}
+.main__history span {
+  font-size: 30px;
+}
+
+footer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+footer p {
+  color: #fff;
+}
+
+body {
+  font-family: "Teko", sans-serif;
+  background-color: #1A1A1A;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  width: 100%;
+  min-width: 767px;
+}/*# sourceMappingURL=top.css.map */

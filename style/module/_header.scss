@@ -1,0 +1,18 @@
+.header {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    background-color: #1A1A1A; // 確認用 本来は#1A1A1A
+    justify-content: space-between;
+    &__contents {
+        filter: invert(88%) sepia(61%) saturate(0%) hue-rotate(229deg) brightness(107%) contrast(101%);
+        &__MyPage {
+            a {
+                font-size: 20px;
+                text-decoration: none;
+                color: #fff;
+                }
+            }
+        }
+    }

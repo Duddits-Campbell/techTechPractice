@@ -1,0 +1,173 @@
+// moduleの中に_reset.scssいれる
+//  ↑　top.scssの一番上に入れる
+
+// 背景に黄色の線があるカテゴリー名
+@mixin category {
+    color:#fff;
+        font-size: 50px;
+        background-image: url(../img/line.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left bottom;
+}
+// カテゴリー全体の設定
+@mixin layout {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+// 白枠のリンクボタンの設定
+@mixin buttonDesign {        
+    margin-top: 15px;
+    color: #fff;
+    width: 350px;
+    height: 40px;
+    border: 2px solid #fff;
+}
+
+#title {
+    color: #fff;
+    text-align-last: left;
+}
+
+.main{
+    background-color: #1A1A1A;
+    &__status {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @include layout;
+        #title::before {
+            content: "Status";
+            @include category;
+            height: 200px;
+        } 
+        &__reservation {
+            margin-top: 20px;
+            &__top {
+                width: 350px;
+                margin-left: auto;
+                margin-right: auto;
+                height: 70px;
+                display: table-cell;
+                vertical-align: middle;
+                p {
+                    color: red;
+                    font-size: 16px;
+                }
+                p:first-child {
+                    font-size: 20px;
+                    color: #1A1A1A;
+                    // 2つ目のpとの間隔調整
+                }
+                background-color: #fff;
+            }
+        }
+        &__button {
+            gap: 0 30px;
+            display: flex;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            a {
+                text-decoration: none;
+                color: #1A1A1A;
+            }
+            #statusButton { // 上下中央寄せ出来ない…
+                background-color: #fff;
+                outline: #1A1A1A solid 1px;
+                outline-offset: -5px;
+                width: 160px;
+                height: 80px;
+                display: table-cell;
+                vertical-align: middle;
+                }
+                span {
+                    font-size: 30px;
+                    background-image: url(../img/line.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: right bottom;
+                    height: 20px;
+                }
+            }
+        }
+    &__message {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @include layout;
+        #title::before {
+            content: "Message";
+            @include category;
+        }
+        &__box {
+            margin-top: 20px;
+            background-color: #fff;
+            text-align: left;
+            &__title {
+                display: flex;
+                text-align: left;
+                justify-content: space-between;
+                span {
+                    font-size: 30px;
+                }
+                #buttonStyle { //
+                    padding: 10px;
+                }
+            }       
+        }
+        a {
+            text-decoration: none;
+        }
+        &__before {
+            @include buttonDesign;
+            span { // 中央線に配置
+                font-size: 30px;
+            }
+            img {
+                vertical-align:text-bottom;
+            }
+        }
+    }
+    &__history{
+        margin-top: 40px;
+        margin-bottom: 40px;
+        @include layout;
+        #title::before {
+            content: "History";
+            @include category;
+        }
+        &__lesson {
+            padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            width: 350px;
+            background-color: #fff;
+            text-align: left;
+            line-height: 4ex;
+            #lessonHistory {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                a {
+                    background-color: #1A1A1A;
+                    color: #fff;
+                    padding: 2px;
+                    letter-spacing: 0.2em;
+                }
+            }
+            &__change {
+                height: 18px;
+                line-height: 18px;
+                font-size: 14px;
+            }
+            p{
+                font-size: 20px;
+            }
+        }
+        &__all {
+            @include buttonDesign;
+        }
+        span {
+            font-size: 30px;
+        }
+    }
+}
